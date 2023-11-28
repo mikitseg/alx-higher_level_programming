@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-for n in range(0, 9):
-    for x in range(n + 1, 10):
-        print('{}'.format(str(n) + str(x)), end=(',\
- ' if int(str(n) + str(x)) < 89 else '\n'))
+for i in range(0, 10):
+    for j in range(i + 1, 10):
+        if i == 8 and j == 9:
+            print("{}{}".format(i, j))
+        else:
+            print("{}{}".format(i, j), end=', ')

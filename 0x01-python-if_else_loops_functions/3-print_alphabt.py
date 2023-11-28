@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for ch in range(97, 123):
-    if chr(ch) == "q" or chr(ch) == "e":
+for c in range(97, 123):
+    if c == 101 or c == 113:
         continue
-    else:
-        print("{}".format(chr(ch)), end="")
+    c = chr(c)
+    print("{}".format(c), end='')
